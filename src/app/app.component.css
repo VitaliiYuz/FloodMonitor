@@ -1,0 +1,102 @@
+/* Контейнер */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Ліва панель із трьома прямокутниками */
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  margin-top: 15vh;
+  gap: 10px;
+}
+
+/* Прямокутні кнопки */
+.button-rect {
+  width: 100px;
+  height: 30px;
+  background-color: #ccc;
+  border: 1px solid #999;
+  border-radius: 4px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold;
+  user-select: none;
+  margin-bottom: 5px;
+}
+.button-rect:hover {
+  background-color: #bbb;
+}
+
+/* Коло-таймер */
+.circle-timer {
+  width: 50px;
+  height: 50px;
+  border: 2px solid #999;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
+
+  position: absolute;
+  left: 150px;
+  top: 20px;
+}
+
+/* Основна зона: картки вгорі + велика картка внизу */
+.main-area {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10vh;
+}
+
+/* Ряд карток */
+.cards-top {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+/* Оформлення карток */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 200px;
+  height: 230px;
+  padding: 10px;
+  text-align: center;
+}
+
+.card img {
+  max-width: 80vh;
+  max-height: 80vh;
+  margin-bottom: 5px;
+}
+
+/* Велика картка стану */
+.flood-state-card {
+  border: 2px solid #8bc34a;
+  border-radius: 8px;
+  width: 450px;
+  height: 280px;
+  padding: 15px;
+  text-align: center;
+  background-color: #f4f8f3;
+  margin-bottom: 30px;
+}
+
+.flood-state-card img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 10px;
+}
