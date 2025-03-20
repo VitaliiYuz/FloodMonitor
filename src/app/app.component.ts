@@ -30,7 +30,7 @@ export class AppComponent implements OnInit {
     // №1
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: '—',
       temperatureImg: 'assets/img/temperature-none.png',
@@ -39,134 +39,134 @@ export class AppComponent implements OnInit {
       snowImg: 'assets/img/snow-none.png',
 
       rain: 'Сильний',
-      rainImg: 'assets/img/rain-strong.png',
+      rainImg: 'images/rain-strong.png',
 
       conclusion: 'Евакуювати',
-      conclusionImg: 'assets/img/conclusion-evacuate.png'
+      conclusionImg: 'images/conclusion-evacuate.png'
     },
     // №2
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: 'Висока',
-      temperatureImg: 'assets/img/temperature-high.png',
+      temperatureImg: 'images/temperature-high.png',
 
       snow: 'Багато',
-      snowImg: 'assets/img/snow-lot.png',
+      snowImg: 'images/snow-lot.png',
 
       rain: 'Помірний',
-      rainImg: 'assets/img/rain-medium.png',
+      rainImg: 'images/rain-medium.png',
 
       conclusion: 'Евакуювати',
-      conclusionImg: 'assets/img/conclusion-evacuate.png'
+      conclusionImg: 'images/conclusion-evacuate.png'
     },
     // №3
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: 'Середня',
-      temperatureImg: 'assets/img/temperature-medium.png',
+      temperatureImg: 'images/temperature-medium.png',
 
       snow: 'Багато',
-      snowImg: 'assets/img/snow-lot.png',
+      snowImg: 'images/snow-lot.png',
 
       rain: 'Помірний',
-      rainImg: 'assets/img/rain-medium.png',
+      rainImg: 'images/rain-medium.png',
 
       conclusion: 'Посилити увагу',
-      conclusionImg: 'assets/img/conclusion-alert.png'
+      conclusionImg: 'images/conclusion-alert.png'
     },
     // №4
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: 'Середня',
-      temperatureImg: 'assets/img/temperature-medium.png',
+      temperatureImg: 'images/temperature-medium.png',
 
       snow: 'Багато',
-      snowImg: 'assets/img/snow-lot.png',
+      snowImg: 'images/snow-lot.png',
 
       rain: 'Немає',
-      rainImg: 'assets/img/rain-none.png',
+      rainImg: 'images/rain-none.png',
 
       conclusion: 'Не турбуватися',
-      conclusionImg: 'assets/img/conclusion-ok.png'
+      conclusionImg: 'images/conclusion-ok.png'
     },
     // №5
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: 'Висока',
-      temperatureImg: 'assets/img/temperature-high.png',
+      temperatureImg: 'images/temperature-high.png',
 
       snow: 'Мало',
-      snowImg: 'assets/img/snow-little.png',
+      snowImg: 'images/snow-little.png',
 
       rain: 'Немає',
-      rainImg: 'assets/img/rain-none.png',
+      rainImg: 'images/rain-none.png',
 
       conclusion: 'Не турбуватися',
-      conclusionImg: 'assets/img/conclusion-ok.png'
+      conclusionImg: 'images/conclusion-ok.png'
     },
     // №6
     {
       waterLevel: 'Помірний',
-      waterLevelImg: 'assets/img/water-medium.png',
+      waterLevelImg: 'images/water-medium.png',
 
       temperature: 'Висока',
-      temperatureImg: 'assets/img/temperature-high.png',
+      temperatureImg: 'images/temperature-high.png',
 
       snow: 'Багато',
-      snowImg: 'assets/img/snow-lot.png',
+      snowImg: 'images/snow-lot.png',
 
       rain: 'Сильний',
-      rainImg: 'assets/img/rain-strong.png',
+      rainImg: 'images/rain-strong.png',
 
       conclusion: 'Посилити увагу',
-      conclusionImg: 'assets/img/conclusion-alert.png'
+      conclusionImg: 'images/conclusion-alert.png'
     },
     // №7
     {
       waterLevel: 'Помірний',
-      waterLevelImg: 'assets/img/water-medium.png',
+      waterLevelImg: 'images/water-medium.png',
 
       temperature: 'Середня',
-      temperatureImg: 'assets/img/temperature-medium.png',
+      temperatureImg: 'images/temperature-medium.png',
 
       snow: 'Багато',
-      snowImg: 'assets/img/snow-lot.png',
+      snowImg: 'images/snow-lot.png',
 
       rain: 'Сильний',
-      rainImg: 'assets/img/rain-strong.png',
+      rainImg: 'images/rain-strong.png',
 
       conclusion: 'Не турбуватися',
-      conclusionImg: 'assets/img/conclusion-ok.png'
+      conclusionImg: 'images/conclusion-ok.png'
     },
     // №8
     {
       waterLevel: 'Помірний',
-      waterLevelImg: 'assets/img/water-medium.png',
+      waterLevelImg: 'images/water-medium.png',
 
       temperature: '—',
       temperatureImg: 'assets/img/temperature-none.png',
 
       snow: 'Мало',
-      snowImg: 'assets/img/snow-little.png',
+      snowImg: 'images/snow-little.png',
 
       rain: 'Сильний',
-      rainImg: 'assets/img/rain-strong.png',
+      rainImg: 'images/rain-strong.png',
 
       conclusion: 'Не турбуватися',
-      conclusionImg: 'assets/img/conclusion-ok.png'
+      conclusionImg: 'images/conclusion-ok.png'
     },
     // №9
     {
       waterLevel: 'Високий',
-      waterLevelImg: 'assets/img/water-high.png',
+      waterLevelImg: 'images/water-high.png',
 
       temperature: '—',
       temperatureImg: 'assets/img/temperature-none.png',
@@ -175,10 +175,10 @@ export class AppComponent implements OnInit {
       snowImg: 'assets/img/snow-none.png',
 
       rain: 'Помірний',
-      rainImg: 'assets/img/rain-medium.png',
+      rainImg: 'images/rain-medium.png',
 
       conclusion: 'Не турбуватися',
-      conclusionImg: 'assets/img/conclusion-ok.png'
+      conclusionImg: 'images/conclusion-ok.png'
     },
   ];
 
@@ -186,22 +186,19 @@ export class AppComponent implements OnInit {
   currentIndex = 0;
   currentRule: FloodRule = this.floodRules[0];
 
-  // Таймер (9 секунд)
-  timerValue = 9;
+
+  timerValue = 6;
   private timerSubscription!: Subscription;
   private oneSecondInterval = interval(1000);
-  private isRunning = false; // чи триває симуляція
+  public isRunning = false;
 
-  ngOnInit(): void {
-    // Якщо хочете, можна автоматично стартувати, інакше чекаємо натиску кнопки:
-    // this.startSimulation();
-  }
+  ngOnInit(): void {}
 
-  // Запуск (Старт)
-  startSimulation(): void {
+  /** **Запуск (Старт)** */
+  public startSimulation(): void {
     if (this.isRunning) return;
     this.isRunning = true;
-    this.timerValue = 9;
+    this.timerValue = 6;
 
     // Запускаємо щосекундний інтервал
     this.timerSubscription = this.oneSecondInterval.subscribe(() => {
@@ -212,8 +209,8 @@ export class AppComponent implements OnInit {
     });
   }
 
-  // Пауза
-  pauseSimulation(): void {
+  /** **Пауза** */
+  public pauseSimulation(): void {
     if (!this.isRunning) return;
     this.isRunning = false;
     if (this.timerSubscription) {
@@ -221,21 +218,21 @@ export class AppComponent implements OnInit {
     }
   }
 
-  // Перезапуск (скидання)
-  resetSimulation(): void {
+  /** **Перезапуск (скидання)** */
+  public resetSimulation(): void {
     this.pauseSimulation();
     this.currentIndex = 0;
     this.currentRule = this.floodRules[0];
-    this.timerValue = 9;
+    this.timerValue = 6;
   }
 
-  // Переходимо до наступного правила
+  /** **Переходимо до наступного правила** */
   private goNextRule(): void {
     this.currentIndex++;
     if (this.currentIndex >= this.floodRules.length) {
       this.currentIndex = 0;
     }
     this.currentRule = this.floodRules[this.currentIndex];
-    this.timerValue = 9;
+    this.timerValue = 6;
   }
 }

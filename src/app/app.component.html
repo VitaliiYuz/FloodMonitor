@@ -6,8 +6,10 @@
     <div class="button-rect" (click)="resetSimulation()">Перезапуск</div>
   </div>
 
-  <!-- Коло (таймер) -->
-  <div class="circle-timer">
+  <!-- Коло (таймер).
+       Додаємо [class.pulsing]="isRunning"
+       щоб анімація була ТІЛЬКИ коли симуляція триває -->
+  <div class="circle-timer" [class.pulsing]="isRunning">
     {{ timerValue }}
   </div>
 
@@ -18,41 +20,45 @@
 
       @if (currentRule.waterLevel !== '—') {
         <div class="card">
-          <h3>Рівень води</h3>
           <img [src]="currentRule.waterLevelImg" alt="Water level" />
+          <h3>Рівень води</h3>
           <p>{{ currentRule.waterLevel }}</p>
         </div>
       }
 
       @if (currentRule.temperature !== '—') {
         <div class="card">
-          <h3>Температура</h3>
           <img [src]="currentRule.temperatureImg" alt="Temperature" />
+          <h3>Температура</h3>
           <p>{{ currentRule.temperature }}</p>
         </div>
       }
 
       @if (currentRule.snow !== '—') {
         <div class="card">
-          <h3>Сніг</h3>
           <img [src]="currentRule.snowImg" alt="Snow" />
+          <h3>Сніг</h3>
           <p>{{ currentRule.snow }}</p>
         </div>
       }
 
       @if (currentRule.rain !== '—') {
         <div class="card">
-          <h3>Дощ</h3>
           <img [src]="currentRule.rainImg" alt="Rain" />
+          <h3>Дощ</h3>
           <p>{{ currentRule.rain }}</p>
         </div>
       }
     </div>
 
-    <!-- Велика картка стану повені -->
-    <div class="flood-state-card">
-      <h2>Стан повені</h2>
+    <!-- Велика картка стану.
+         Застосовуємо [class.evacuate]="currentRule.conclusion === 'Евакуювати'" -->
+    <div
+      class="flood-state-card"
+      [class.evacuate]="currentRule.conclusion === 'Евакуювати'"
+    >
       <img [src]="currentRule.conclusionImg" alt="Flood Conclusion" />
+      <h2>Стан повені</h2>
       <p>{{ currentRule.conclusion }}</p>
     </div>
   </div>

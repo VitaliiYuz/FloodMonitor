@@ -1,10 +1,12 @@
-/* Контейнер */
+/* Загальний фон, верстка */
 .container {
   position: relative;
   width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
+  background: linear-gradient(120deg, #DEECF8 0%, #E0F7FA 100%);
+  font-family: "Segoe UI", sans-serif;
 }
 
 /* Ліва панель із трьома прямокутниками */
@@ -20,34 +22,54 @@
 /* Прямокутні кнопки */
 .button-rect {
   width: 100px;
-  height: 30px;
-  background-color: #ccc;
+  height: 35px;
+  background-color: #FCF7F8;
   border: 1px solid #999;
   border-radius: 4px;
-  line-height: 30px;
+  line-height: 35px;
   text-align: center;
   cursor: pointer;
   font-weight: bold;
   user-select: none;
   margin-bottom: 5px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  transition: background-color 0.2s, transform 0.2s;
 }
 .button-rect:hover {
-  background-color: #bbb;
+  background-color: #FFEEEE;
+  transform: translateY(-2px);
 }
 
 /* Коло-таймер */
 .circle-timer {
-  width: 50px;
-  height: 50px;
-  border: 2px solid #999;
+  width: 60px;
+  height: 60px;
+  border: 3px solid #7BA4D9;
   border-radius: 50%;
   text-align: center;
-  line-height: 50px;
+  line-height: 60px;
   font-weight: bold;
+  color: #333;
+  background: #fff;
 
   position: absolute;
   left: 150px;
   top: 20px;
+
+  /* За замовчуванням анімація вимкнена */
+  animation: none;
+}
+
+/* Коли .circle-timer має клас .pulsing – анімація працює */
+.circle-timer.pulsing {
+  animation: pulseTimer 1s infinite;
+}
+
+/* Кадри анімації для кола: від 100% розміру до 110%, потім назад */
+@keyframes pulseTimer {
+  0%   { transform: scale(1);   box-shadow: 0 0 0 rgba(0,0,0,0.1); }
+  50%  { transform: scale(1.1); box-shadow: 0 0 8px rgba(0,0,0,0.1); }
+  100% { transform: scale(1);   box-shadow: 0 0 0 rgba(0,0,0,0.1); }
 }
 
 /* Основна зона: картки вгорі + велика картка внизу */
@@ -56,7 +78,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10vh;
+  margin-top: 4vh;
 }
 
 /* Ряд карток */
@@ -67,36 +89,111 @@
   margin-bottom: 40px;
 }
 
-/* Оформлення карток */
+/* Стилі карток (4 зверху) */
+/* Стилі карток */
 .card {
   border: 1px solid #ccc;
   border-radius: 8px;
-  width: 200px;
-  height: 230px;
+  width: 230px;
+  height: 270px; /* Збільшено висоту, щоб вміст не виходив */
+  background-color: #ffffff;
+  box-shadow: 1px 1px 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+
+  /* Організуємо внутрішній контент у вертикальному напрямку */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   padding: 10px;
-  text-align: center;
 }
 
+/* Ефект при наведенні */
+.card:hover {
+  transform: translateY(-3px);
+}
+
+/* Контейнер для зображення */
 .card img {
-  max-width: 80vh;
-  max-height: 80vh;
-  margin-bottom: 5px;
+  width: 100%;  /* Зробити зображення адаптивним */
+  max-width: 200px;  /* Фіксуємо максимальну ширину */
+  height: auto;
+  border-radius: 5px;
+  object-fit: cover;
 }
 
-/* Велика картка стану */
+/* Заголовок картки */
+.card h3 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  flex-grow: 1; /* Дозволяє рівномірно зайняти доступний простір */
+}
+
+/* Опис картки */
+.card p {
+  font-size: 16px;
+  text-align: center;
+  color: #333;
+  margin: 5px 0;
+  flex-grow: 1;
+}
+
+/* Велика картка стану (знизу) */
+/* Велика картка стану (знизу) */
 .flood-state-card {
-  border: 2px solid #8bc34a;
-  border-radius: 8px;
-  width: 450px;
-  height: 280px;
-  padding: 15px;
+  border: 3px solid #8bc34a; /* Зелена рамка за замовчуванням */
+  border-radius: 10px;
+  width: 480px;
+  height: 320px; /* Збільшено для коректного розподілу */
+  padding: 20px;
   text-align: center;
   background-color: #f4f8f3;
   margin-bottom: 30px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s, border-color 0.3s;
+
+  /* Використання flex для рівномірного розподілу */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.flood-state-card img {
-  max-width: 100px;
-  display: block;
-  margin: 0 auto 10px;
+/* Ефект при наведенні */
+.flood-state-card:hover {
+  transform: scale(1.02);
 }
+
+/* Контейнер для зображення */
+.flood-state-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: contain; /* Гарантує правильне відображення */
+  margin-bottom: 10px;
+}
+
+/* Заголовок */
+.flood-state-card h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+  flex-grow: 1; /* Дозволяє заголовку адаптуватися */
+}
+
+/* Опис картки */
+.flood-state-card p {
+  font-size: 18px;
+  text-align: center;
+  color: #333;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex-grow: 1;
+}
+
+/* Якщо "Евакуювати" – змінюємо рамку на червону */
+.flood-state-card.evacuate {
+  border-color: red !important;
+}
+
